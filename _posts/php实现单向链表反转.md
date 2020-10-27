@@ -1,0 +1,111 @@
+title: PHP实现单向链表反转
+author: zhoubohan
+tags:
+  - PHP
+  - 链表
+categories:
+  - php实现链表相关
+date: 2018-09-25 17:31:00
+---
+### 先来张图来看看单向链表
+
+
+![upload successful](/images/pasted-1.png)
+
+### 话不多说直接上代码
+* 先写一个节点的类，用来设置值和指针
+
+```php
+class Node
+{
+	
+  privated $value;
+    privated $next;
+    
+    public function __construct($value = null)
+    {
+    	$this->value = $value;
+    }
+    
+    //设置value
+    public function setValue($value)
+    {
+    	$this->value = $value;
+    }
+    
+    //获取value
+    public function getValue()
+    {
+    	return $this->value;
+    }
+    
+    //设置next
+    public function setNext($next)
+    {
+    	$this->next = $next;
+    }
+    
+    //获取next
+    public function getNext()
+    {
+    	return $this->next;
+    }
+    
+}
+```
+
+* 接下来设置一个长度为10的链表
+
+```php
+$head = new Node(0);//设置头节点值为0
+$tmp = null; //临时变量
+$cur = null; //当前节点
+for ($i = 1;$i < 10;$i++) {
+	$tmp = new Node($i);
+	if ($i == 1) {
+    	$head->setNext($tmp);
+    } else {
+    	$cur->setNext($tmp);
+    }
+}
+```
+
+* 接下来考虑反转的问题，有两种实现方法
+
+```php
+第一种是遍历，将当前节点的下一个节点缓存后更改当前节点指针
+function reverse($head)
+{
+	
+  if ($head == null) {
+    	return $head;
+    }
+    $pre = $head;
+    $cur = $head->getNext();
+    $next = null;
+    while ($cur !== null) {
+    	$next = $cur->getNext();
+        $cur->setNext($pre);
+        $pre = $cur;
+        $cur = $next;
+    }
+    //将原链表的头节点的下一个节点置为null，再将反转后的头节点赋给head  
+    $head->setNext(null);
+    $head = $pre;
+    return $head;
+}
+
+第二种是递归 在反转当前节点之前先反转后续节点
+function reverse2($head)
+{
+	
+  if (null == $head || null = $head->getNext()) {
+    	return $head;
+    }
+    
+    $reverseHead = reverse2($head);
+    $head->getNext()->setNext($head);
+    $head->setNext(null);
+    return $head;
+}
+```
