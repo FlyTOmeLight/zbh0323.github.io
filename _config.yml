@@ -1,24 +1,24 @@
 # Site settings
-title: Kali Blog
-SEOTitle: Kali 的小站
-header-img: img/post-bg-desk.jpg
-email: kalierincn@outlook.com
-description: "中立最好，学校最坏."
-keyword: "Kali Blog, Kali的小站"
-url: "https://kalicn.github.io"          # your host, for absolute URL
+title: Light- Blog
+SEOTitle: Light- 的小站
+header-img: images/yy_title.jpg
+email: zhoubohan.pro@gmail.com
+description: "想成为一束光。"
+keyword: "Light- Blog, Light-的小站"
+url: "https://zbh0323.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
-github_repo: "https://github.com/kalicn/kalicn.github.io.git" # you code repository
+github_repo: "https://github.com/zbh0323/zbh0323.github.io.git" # you code repository
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "与其看教科书，还不如读Linux源码。"
+sidebar-about-description: "stay gold, stay hungry"
 sidebar-avatar: /img/yeswecode.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
 # SNS settings
 RSS: true
-github_username:    kalicn
+github_username:    zbh0323
 
 
 
@@ -55,11 +55,11 @@ kramdown:
 # Gitalk
 gitalk:
   enable: true   #是否开启Gitalk评论
-  clientID: 5943aeedd7ee1a1cbdf7        # 嘿，别乱看我的秘密                #生成的clientID
-  clientSecret: 4ffbc9e4eb8b6aef2b390b2bda69ed6a744c5c07    #生成的clientSecret
-  repo: kalicn.github.io    #仓库名称
-  owner: kalicn    #github用户名
-  admin: kalicn
+  clientID: 391bb50bacb8e159a83d        # 嘿，别乱看我的秘密                #生成的clientID
+  clientSecret: a69935bca2f94e355b1786d6be5b94e7b7b882c3    #生成的clientSecret
+  repo: zbh0323.github.io    #仓库名称
+  owner: zbh0323    #github用户名
+  admin: zbh0323
   distractionFreeMode: false #是否启用类似FB的阴影遮罩
   perPage: 15
 
@@ -68,9 +68,8 @@ gitalk:
 
 # Analytics settings
 # Baidu Analytics
-ba_track_id: 4383e168cd44bd4eeedaa34229a603c5
-
-ga_track_id: 'UA-171298607-1'
+ba_track_id: 8781537abaedfc88ee226419437972a7
+ga_track_id: 'G-RXVXV4EG4Z'
 ga_domain: auto
 
 
