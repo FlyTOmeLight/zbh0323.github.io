@@ -1,3 +1,4 @@
+---
 layout: post
 title: PHP页面静态化技术（三）
 description: 通过PHP处理伪静态及通过设置服务器相关配置文件来实现静态化

@@ -1,3 +1,4 @@
+---
 layout: post
 title: PHP开发APP接口（二）
 description: 通信接口数据的封装

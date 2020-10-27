@@ -1,3 +1,4 @@
+---
 layout: post
 title: PHP开发APP接口（四）
 description: 通信接口数据的封装时所涉及的缓存技术以及定时任务的相关命令

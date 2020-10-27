@@ -1,3 +1,4 @@
+---
 layout: post
 title: PHP页面静态化技术（一）
 description: >-

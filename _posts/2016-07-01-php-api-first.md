@@ -1,3 +1,4 @@
+---
 layout: post
 title: PHP开发APP接口（一）
 description: APP通信的数据格式即及接口的方式方法了解
